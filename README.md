@@ -25,11 +25,24 @@ Getting set-up with Python can be a pain sometimes, so hopefully these instructi
 
 This should create an environment called `athena`. This will install all required packages for the demo in a containerized manner. Read more about environments [here](https://docs.conda.io/projects/conda/en/latest/user-guide/tasks/manage-environments.html).
 
-3. Activate environment & launch notebook.
+3. Activate the newly installed environment.
 
 ```
    source activate athena
+```
+
+4. Set-up `gensim` stuff if necessary.
+
+```
+   python -m spacy download en
+```
+
+5. Launch jupyter notebooks
+
+```
    jupyter notebook
 ```
 
-4. A web-browser should launch serving the repo's content. Open `notebooks` and go crazy.
+A web-browser should launch serving the repo's content. Navigate to `notebooks` and go crazy.
+
+When you're done with this, you can exit the python environment via `source deactivate`.
